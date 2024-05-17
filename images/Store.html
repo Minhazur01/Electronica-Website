@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/store.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Store</title>
+<style>
+.featured_product p {
+    color: #ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.featured_product button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    padding: 6px 10px;
+    border-color: rgb(30, 32, 182);
+    border-style: solid;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    cursor: pointer;
+
+}
+
+.featured_product button:hover {
+    color: rgb(8, 248, 248);
+}
+
+
+
+</style><link rel="stylesheet" href="./Store_files/styles.css"></head>
+
+
+
+<body>
+    <div class="web_header">
+        <br>
+        <h1>Electronica</h1>
+        <a href="http://127.0.0.1:5500/home.html">Home</a>
+        <a href="http://127.0.0.1:5500/store.html">Store</a>
+        <a href="http://127.0.0.1:5500/about-us.html">About Us</a>
+        <a href="http://127.0.0.1:5500/download-app.html">Download App</a>
+        <a href="http://127.0.0.1:5500/contact-us.html">Contact Us</a>
+    </div>
+
+    <table>
+        <tbody><tr class="table_row">
+            <td class="table_data">
+                <div class="featured_product">
+                    <h2>Infinix G20 Pro</h2>
+                    <img src="./Store_files/infinix-g20-pro.PNG" alt="G20 Pro">
+                    <p>£600</p>
+                    <button>Add to cart</button>
+                </div>
+            </td>
+            <td class="table_data">
+                <div class="featured_product">
+                    <h2>OnePlus 11 Pro</h2>
+                    <img src="./Store_files/oneplus-11-pro.PNG" alt="Oneplus 11 Pro">
+                    <p>£729</p>
+                    <button>Add to cart</button>
+                </div>
+            </td>
+            <td class="table_data">
+                <div class="featured_product">
+                    <h2>Xiaomi 14 Ultra</h2>
+                    <img src="./Store_files/14-ultra-xiaomi.PNG" alt="Xiaomi 14">
+                    <p>£1,299.00</p>
+                    <button>Add to cart</button>
+                </div>
+            </td>
+            <td class="table_data">
+                <div class="featured_product">
+                    <h2>Google Pixel 8 Pro</h2>
+                    <img src="./Store_files/google8pro" alt="Pixel 8 Pro">
+                    <p>£999</p>
+                    <button>Add to cart</button>
+                </div>
+            </td><td class="table_data">
+                    <div class="featured_product">
+                    <h2>iPhone 14 Pro</h2>
+                    <img src="./Store_files/iphone14pro.PNG" alt="iphone 14 Pro">
+                    <p>£900</p>
+                    <button>Add to cart</button>
+                </div>
+        </td></tr>
+    </tbody></table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

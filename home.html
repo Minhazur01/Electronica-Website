@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Electronica</title>
+</head>
+<style>
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .featured_product p {
+        color: #ffff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block; 
+        width: 45%;
+        margin: 0 2.5%; 
+        vertical-align: top; 
+        box-sizing: border-box;
+}
+
+table {
+        width: 100%;
+    }
+    .featured_product {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+    .table_row {
+        display: table-row; 
+    }
+    .table_data {
+        display: table-cell;
+    }
+
+    .table_data:first-child {
+        padding-right: 5px;
+    }
+    .table_data:last-child {
+        padding-left: 5px; 
+    }
+
+</style>
+
+<body>
+    <div class="web_header">
+        <br>
+        <h1>Electronica</h1>
+        <form id="form"> 
+            <input type="search" id="query" name="q" placeholder="Search...">
+            <button>Search</button>
+        </form>
+        <a href="home.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="about-us.html">About Us</a>
+        <a href="download-app.html">Download App</a>
+        <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <br>
+    <h1 id="welcome_page">Welcome</h1>
+
+    <p id="welcome_text">
+        Welcome to Electronica, your ultimate destination for cutting-edge technology! At Electronica, we don't just sell mobile phones and laptops; we provide gateways to the future. With a passion for innovation and a commitment to excellence, we bring you the latest advancements in mobile and computing technology.
+    </p>
+    <br><br><br><br><br><br><br> 
+    <table>
+        <tr class="table_row">
+            <td class="table_data">
+                <div class="featured_product">
+                    <h2>Featured Product</h2>
+                    <img src="images/asus-rog-phone-6-6-pro-black.webp" alt="ROG Phone 6">
+                    <p>The Ultimate Gaming Phone</p> <br><br>
+                    <button>Buy Now</button>
+                </div>
+            </td>
+            <td class="table_data">
+                <div class="featured_product">
+                    <h2>Product on sale</h2>
+                    <img src="images/samsung-galaxy-s23-fe.webp" alt="ROG Phone 6">
+                    <p>Samsung Galaxy S23 FE</p>
+                    <p>£499 <s>£599</s></p> <br><br>
+                    <button>Buy Now</button>
+                </div>
+            </td>
+            <td class="table_data">
+                <div class="featured_product">
+                    <h2>Student Discount</h2>
+                    <p>Use code "STUDENT20" for 20% on first 5 orders.</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+<footer>
+    <div class="containers">
+        <div class="row">
+        <div class="column">
+        <h4>Contact Us</h4>
+        <p>Email: info@Electronica.com</p>
+        <p>Phone: 555-123-4567</p>
+    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
